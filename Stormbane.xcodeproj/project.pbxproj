@@ -15,6 +15,7 @@
 		94C87D8022862088002486FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C87D7E22862088002486FC /* LaunchScreen.storyboard */; };
 		94C87D8B22862088002486FC /* StormbaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87D8A22862088002486FC /* StormbaneTests.swift */; };
 		94C87D9622862088002486FC /* StormbaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87D9522862088002486FC /* StormbaneUITests.swift */; };
+		94C87DA4228725F9002486FC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87DA3228725F9002486FC /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		94C87D9122862088002486FC /* StormbaneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormbaneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C87D9522862088002486FC /* StormbaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormbaneUITests.swift; sourceTree = "<group>"; };
 		94C87D9722862088002486FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94C87DA3228725F9002486FC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				94C87D7C22862088002486FC /* Assets.xcassets */,
 				94C87D7E22862088002486FC /* LaunchScreen.storyboard */,
 				94C87D8122862088002486FC /* Info.plist */,
+				94C87DA3228725F9002486FC /* Settings.swift */,
 			);
 			path = Stormbane;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				94C87D7822862086002486FC /* SettingsViewController.swift in Sources */,
 				94C87D7422862086002486FC /* AppDelegate.swift in Sources */,
+				94C87DA4228725F9002486FC /* Settings.swift in Sources */,
 				94C87D7622862086002486FC /* WeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
