@@ -18,22 +18,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vu3-8j-jrl">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vu3-8j-jrl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snw-Ad-uk8">
+                                <rect key="frame" x="96.5" y="76" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7S-5R-gsx">
+                                <rect key="frame" x="160" y="117" width="0.0" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="njN-Jz-Y5K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I7S-5R-gsx" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="53" id="9VN-pZ-wFh"/>
+                            <constraint firstItem="Vu3-8j-jrl" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Agq-JU-KE1"/>
+                            <constraint firstItem="Snw-Ad-uk8" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="12" id="X9l-nl-diP"/>
+                            <constraint firstItem="Vu3-8j-jrl" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="Yat-gM-TKm"/>
+                            <constraint firstItem="I7S-5R-gsx" firstAttribute="centerX" secondItem="Vu3-8j-jrl" secondAttribute="centerX" id="d7j-LF-GC8"/>
+                            <constraint firstItem="I7S-5R-gsx" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="lKZ-tf-78O"/>
+                            <constraint firstItem="Snw-Ad-uk8" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="uf6-AH-cBa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" id="i3j-TW-sww">
-                        <barButtonItem key="leftBarButtonItem" title="Location" id="itc-oi-gvh"/>
+                        <barButtonItem key="leftBarButtonItem" title="Location" id="itc-oi-gvh">
+                            <connections>
+                                <action selector="locations" destination="9pv-A4-QxB" id="MO0-CS-aOp"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="HSH-Ko-i7n">
                             <connections>
                                 <segue destination="dDF-1G-0Qi" kind="show" identifier="ShowSettings" id="hj8-uU-1vr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="currentWeatherLabel" destination="Snw-Ad-uk8" id="hw8-bw-HFZ"/>
+                        <outlet property="currentWeatherValueLabel" destination="I7S-5R-gsx" id="QlG-vu-kEY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
