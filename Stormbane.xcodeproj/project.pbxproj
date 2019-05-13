@@ -17,6 +17,8 @@
 		94C87D9622862088002486FC /* StormbaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87D9522862088002486FC /* StormbaneUITests.swift */; };
 		94C87DA4228725F9002486FC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87DA3228725F9002486FC /* Settings.swift */; };
 		94C87DA622887AE3002486FC /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87DA522887AE3002486FC /* WeatherForecast.swift */; };
+		94C87DAA2289AAE4002486FC /* WeatherForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94C87DA92289AAE4002486FC /* WeatherForecastCell.xib */; };
+		94C87DAC2289AF1A002486FC /* WeatherForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87DAB2289AF1A002486FC /* WeatherForecastCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		94C87D9722862088002486FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C87DA3228725F9002486FC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		94C87DA522887AE3002486FC /* WeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
+		94C87DA92289AAE4002486FC /* WeatherForecastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherForecastCell.xib; sourceTree = "<group>"; };
+		94C87DAB2289AF1A002486FC /* WeatherForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				94C87D8122862088002486FC /* Info.plist */,
 				94C87DA3228725F9002486FC /* Settings.swift */,
 				94C87DA522887AE3002486FC /* WeatherForecast.swift */,
+				94C87DA92289AAE4002486FC /* WeatherForecastCell.xib */,
+				94C87DAB2289AF1A002486FC /* WeatherForecastCell.swift */,
 			);
 			path = Stormbane;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 				94C87D8022862088002486FC /* LaunchScreen.storyboard in Resources */,
 				94C87D7D22862088002486FC /* Assets.xcassets in Resources */,
 				94C87D7B22862086002486FC /* Main.storyboard in Resources */,
+				94C87DAA2289AAE4002486FC /* WeatherForecastCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +277,7 @@
 				94C87D7422862086002486FC /* AppDelegate.swift in Sources */,
 				94C87DA4228725F9002486FC /* Settings.swift in Sources */,
 				94C87D7622862086002486FC /* WeatherViewController.swift in Sources */,
+				94C87DAC2289AF1A002486FC /* WeatherForecastCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

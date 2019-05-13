@@ -36,14 +36,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hmx-2i-e6q">
+                                <rect key="frame" x="0.0" y="248" width="320" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Lei-5X-6Ij"/>
+                                    <constraint firstAttribute="width" constant="320" id="wWz-gb-evP"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="qt1-rs-6OJ"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="AIp-8e-bDb"/>
+                                </connections>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.82795994718309862" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="I7S-5R-gsx" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="53" id="9VN-pZ-wFh"/>
                             <constraint firstItem="Vu3-8j-jrl" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Agq-JU-KE1"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="hmx-2i-e6q" secondAttribute="bottom" constant="20" id="JAw-UZ-5VF"/>
+                            <constraint firstItem="hmx-2i-e6q" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="Qam-dW-Uqd"/>
                             <constraint firstItem="Snw-Ad-uk8" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="12" id="X9l-nl-diP"/>
                             <constraint firstItem="Vu3-8j-jrl" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="Yat-gM-TKm"/>
                             <constraint firstItem="I7S-5R-gsx" firstAttribute="centerX" secondItem="Vu3-8j-jrl" secondAttribute="centerX" id="d7j-LF-GC8"/>
+                            <constraint firstItem="hmx-2i-e6q" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="i7t-7e-Ujv"/>
                             <constraint firstItem="I7S-5R-gsx" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="lKZ-tf-78O"/>
                             <constraint firstItem="Snw-Ad-uk8" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="uf6-AH-cBa"/>
                         </constraints>
@@ -64,6 +79,7 @@
                     <connections>
                         <outlet property="currentWeatherLabel" destination="Snw-Ad-uk8" id="hw8-bw-HFZ"/>
                         <outlet property="currentWeatherValueLabel" destination="I7S-5R-gsx" id="QlG-vu-kEY"/>
+                        <outlet property="tableView" destination="hmx-2i-e6q" id="Vaj-rI-bg7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
