@@ -12,9 +12,7 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet weak var darkSkyAPIKeyLabel: UILabel!
     @IBOutlet weak var darkSkyAPIKeyTextField: UITextField!
-    
-    var weatherForecast = WeatherForecast()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         darkSkyAPIKeyTextField.text = Settings.apiKey
