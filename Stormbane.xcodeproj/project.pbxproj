@@ -13,7 +13,7 @@
 		94C87D7B22862086002486FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C87D7922862086002486FC /* Main.storyboard */; };
 		94C87D7D22862088002486FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C87D7C22862088002486FC /* Assets.xcassets */; };
 		94C87D8022862088002486FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C87D7E22862088002486FC /* LaunchScreen.storyboard */; };
-		94C87D8B22862088002486FC /* StormbaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87D8A22862088002486FC /* StormbaneTests.swift */; };
+		94C87D8B22862088002486FC /* BaseUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87D8A22862088002486FC /* BaseUnitTest.swift */; };
 		94C87D9622862088002486FC /* StormbaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87D9522862088002486FC /* StormbaneUITests.swift */; };
 		94C87DA4228725F9002486FC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87DA3228725F9002486FC /* Settings.swift */; };
 		94C87DA622887AE3002486FC /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C87DA522887AE3002486FC /* WeatherForecast.swift */; };
@@ -48,7 +48,7 @@
 		94C87D7F22862088002486FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94C87D8122862088002486FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C87D8622862088002486FC /* StormbaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormbaneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		94C87D8A22862088002486FC /* StormbaneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormbaneTests.swift; sourceTree = "<group>"; };
+		94C87D8A22862088002486FC /* BaseUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUnitTest.swift; sourceTree = "<group>"; };
 		94C87D8C22862088002486FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C87D9122862088002486FC /* StormbaneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormbaneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C87D9522862088002486FC /* StormbaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormbaneUITests.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		94C87D8922862088002486FC /* StormbaneTests */ = {
 			isa = PBXGroup;
 			children = (
-				94C87D8A22862088002486FC /* StormbaneTests.swift */,
+				94C87D8A22862088002486FC /* BaseUnitTest.swift */,
 				94C87D8C22862088002486FC /* Info.plist */,
 			);
 			path = StormbaneTests;
@@ -285,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94C87D8B22862088002486FC /* StormbaneTests.swift in Sources */,
+				94C87D8B22862088002486FC /* BaseUnitTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
